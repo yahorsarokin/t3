@@ -11,6 +11,7 @@ export default tseslint.config(
   {
     ignores: [".next"],
   },
+  // @ts-expect-error -- compatibility layer type mismatch
   ...compat.extends("next/core-web-vitals"),
   {
     files: ["**/*.ts", "**/*.tsx"],
